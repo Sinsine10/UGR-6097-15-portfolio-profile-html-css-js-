@@ -3,95 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is Achievement page of my website">
-    <title>Homepage</title>
-    
+    <meta name="description" content="This is the Achievement page of my website">
+    <title>Achievement Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../src/JavaScript/javas.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <img src="image/menuicon.png" alt="menu icon">
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo">
+                <a href="home.html"><img src="image/logos.png" alt="My website Logo"></a>
             </div>
-            <div>
-            <a href="home.html"><img src="image/logos.png" alt="My website Logo"> </a>  
+            <ul class="nav-list">
+                <li class="hideOnMobile"><a href="home.html"><span>Home</span></a></li>
+                <li class="hideOnMobile"><a href="About.html"><span>About</span></a></li>
+                <li class="hideOnMobile"><a href="Blog.html"><span>Blog</span></a></li>
+                <li class="hideOnMobile"><a href="Achievement.html"><span>Achievement</span></a></li>
+                <li class="hideOnMobile"><a href="contact.html"><span>Contact</span></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="image/menuicon.png"></img></a></li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><img src="image/close.png" height="36"  width="36"></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="Achievement.html">Achievement</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="achiv-main-content">
+        <section class="profile-section">
+            <div class="profile-image">
+                <img src="image/image1.jpg" alt="Profile Picture">
+            </div>
+            
+            <ul class="profile-list">
+                <li>Programming Fundamentals</li>
+                <li>Set goals to manage our time</li>
+                <li>How to study effectively</li>
+            </ul>
         </div>
-             <ul>
-                <li>
-                    <a href="home.html">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="About.html">
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Blog.html">
-                        <span>Blog</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="Achievement.html">
-                        <span>Achievement</span>
-                    </a>
-                </li>
-                </ul>
-            </nav>
-       
-        </header>
-        <main>
-            <div>
-                <img src="image/image1.jpg" alt="picture of"> 
-                <ul>
-                   <li>Programing Fundamentals</li>
-                   <li>Set goals to manage our time</li>
-                   <li>How to study effectively</li>
-                </ul>
+        </section>
+        <section class="achievements">
+            
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <img src="image/A1.jpg" alt="Udacity certificate">
+                    <p>Programming Fundamentals</p>
+                </div>
+                <div class="achievement-card1" >
+                    <img src="image/A2.jpg" alt="Certificate">
+                    <p>Set goals to manage our time</p>
+                </div>
+                <div class="achievement-card1" >
+                    <img src="image/A3.jpg" alt="Certificate">
+                    <p>How to study effectively</p>
+                </div>
             </div>
-          <h1>Achievements</h1>
-          <div>
-              <div>
-                  <img src="image/A1.jpg" alt="Udacity certificate">
-                  <p>Programing Fundamentals</p>
-              </div>
-              <div>
-                  <img src="image/A2.jpg" alt="certificate">
-                  <p>Set goals to manage our time</p>
-              </div>
-              <div>
-                  <img src="image/A3.jpg" alt=" certificate">
-                  <p>How to study effectively</p>
-              </div> 
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="social-links">
+            <a href="https://t.me/Certified_weird_o" class="telegram-link">
+              <img src="image/Tg.png" alt="Telegram" />
+              Telegram
+            </a>
+            <a ref="https://www.instagram.com/sinsine_w" class="instagram-link">
+              <img src="image/insta.png" alt="Instagram" />
+              Instagram
+            </a>
           </div>
-         
-      </main>
-
-      <footer >
-        <div>
-            <div>
-              <a href="https://t.me/Certified_weird_o" target="_blank">
-               <img src="image/Tg.png" alt="Telegram Icon">
-               </a>
-              <a href="https://www.instagram.com/sinsine_w" target="_blank">
-               <img src="image/insta.png" alt="Instagram Icon - Visit my Instagram profile">
-               </a>
-               </div>
-           </div>
-               <address>
-                   <p>Email: <a href="mailto:wonosinsine@gmail.com">wonosisine@gmail.com</a>  </p>
-                   <p>Phone: <a href="tel:+251978060846">+251933247636</a></p>
-               </address>
-           <div>
-                   <p>&copy;  2024 Made by Sinsine Wono. All rights reserved.</p>
-            </div>
-              
-               </footer>
-   </body>
-   </html>
+          
+            <p>Email: <a href="mailto:wonosisine@gmail.com" class="mm">wonosisine@gmail.com</a></p>
+            <p>Phone: <a href="tel:+251933247636" class="pp">+251933247636</a></p>
+          
+        </div>
+          <div class="copyright">
+            <p>© 2024 Made by Sinsine Wono. All rights reserved.</p>
+          </div>
+        
+      </footer>
+</body>
+</html>

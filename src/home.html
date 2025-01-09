@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is Home page of my website">
+    <link rel="stylesheet" href="css/style.css">
     <title>Homepage</title>
-    
+    <script src="../src/JavaScript/javas.js"></script>
 </head>
 <body>
-        <header>
-            <nav>
-                <div>
-                    <img src="image/menuicon.png" alt="menu icon">
-                </div>
-                <div><a href="home.html"><img src="image/logos.png" alt="My website Logo"></a>  </div>
-                 <ul>
-                    <li>
-                        <a href="home.html">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="About.html">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Blog.html">
-                            <span>Blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Achievement.html">
-                            <span>Achievement</span>
-                        </a>
-                    </li>
-                    </ul>
-                </nav>
-           
-      </header>
-        <main >
-            <section >
-                <picture>
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo">
+                <a href="home.html"><img src="image/logos.png" alt="My website Logo"></a>
+            </div>
+            <ul class="nav-list">
+                <li class="hideOnMobile"><a href="home.html"><span>Home</span></a></li>
+                <li class="hideOnMobile"><a href="About.html"><span>About</span></a></li>
+                <li class="hideOnMobile"><a href="Blog.html"><span>Blog</span></a></li>
+                <li class="hideOnMobile"><a href="Achievement.html"><span>Achievement</span></a></li>
+                <li class="hideOnMobile"><a href="contact.html"><span>Contact</span></a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="image/menuicon.png" ></img></a></li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><img src="image/close.png" ></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="Achievement.html">Achievement</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main class="home">
+            <section class="intro">
+                <picture class="kesh">
                 <img src="image/heros.jpg" alt="sinsin's image" >
             </picture>
-                <h1> Hello, I'm Sinsine Wono</h1>
+                 <h1 id="typing"> </h1> 
             </section>
-            <div>
+            <div class="desc">
                 <p>I'm a passionate software engineer at Addis Ababa University, dedicated to learn and building 
                     efficient software solutions. </p>
                 </div>
         </main>
      
   
-<footer >
-     <div>
-         <div>
-           <a href="https://t.me/Certified_weird_o" target="_blank">
-            <img src="image/Tg.png" alt="Telegram Icon">
-            </a>
-           <a href="https://www.instagram.com/sinsine_w" target="_blank">
-            <img src="image/insta.png" alt="Instagram Icon - Visit my Instagram profile">
-            </a>
+        <footer>
+            <div class="footer-container">
+              <div class="social-links">
+                <a href="https://t.me/Certified_weird_o" class="telegram-link">
+                  <img src="image/Tg.png" alt="Telegram" />
+                  Telegram
+                </a>
+                <a ref="https://www.instagram.com/sinsine_w" class="instagram-link">
+                  <img src="image/insta.png" alt="Instagram" />
+                  Instagram
+                </a>
+              </div>
+              
+                <p>Email: <a href="mailto:wonosisine@gmail.com" class="mm">wonosisine@gmail.com</a></p>
+                <p>Phone: <a href="tel:+251933247636" class="pp">+251933247636</a></p>
+              
             </div>
-        </div>
-            <address>
-                <p>Email: <a href="mailto:wonosinsine@gmail.com">wonosisine@gmail.com</a>  </p>
-                <p>Phone: <a href="tel:+251978060846">+251933247636</a></p>
-            </address>
-        <div>
-                <p>&copy;  2024 Made by Sinsine Wono. All rights reserved.</p>
-         </div>
-           
-            </footer>
+              <div class="copyright">
+                <p>© 2024 Made by Sinsine Wono. All rights reserved.</p>
+              </div>
+            
+          </footer>
 </body>
 </html>

@@ -1,0 +1,857 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #20142D;
+}
+/* header*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+  padding: 0px 20px;
+  background-color: #C8ACDE;
+  height: 121px;
+  
+}
+
+header .logo img {
+  height: 120px;
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  margin-right: 40px;
+  
+  
+}
+
+nav ul li {
+  margin: 0;
+  
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 5px 
+  
+}
+span {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #49187E;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  border: 2px solid #6E5885 ;
+  
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+span:hover{
+  background-color:#C8ACDE;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+
+  height: 100vh;
+  width: 250px;
+  background-color:#C8ACDE;
+  z-index: 10;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+  color: #20142D;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu-button{
+  display: none;
+  
+}
+.sidebar img{
+  height:35px;  
+  width:35px
+  
+}
+.menu-button img{
+  height:65px;  
+  width:65px
+  
+}
+
+
+
+@media(max-width: 580px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+  .sidebar{
+    width: 50%;
+  }
+  .nav-list .menu-button{
+    margin-left: 50px;
+  }
+  
+  header .logo img {
+    height: 100px;
+    width: 70px;
+  }
+  /*home*/
+  #typing{
+    font-size: 36px;
+    width: 50%;
+    margin-left: 20%;
+  }
+  .desc p{
+    text-align: center;
+    font-size: 16px;
+    max-width: 50%;
+    margin-left: 20%;
+  }
+  .intro .kesh img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;}
+  /*about*/
+  main .main-content {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .main-content h1{
+    font-size: 24px;
+    margin-top:0 ;
+  }
+
+  .about-section, .hobbies-section, .skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .about-text, .hobbies-text {
+    font-size: 16px;
+     margin-right: 7%;
+     margin-left: 5%;
+     text-align: center;
+    }
+    .about-section img{
+      width: 150px;
+      height: 200px;
+      
+      justify-content: center;
+    }
+    .skills-text {
+      font-size: 16px;
+      margin-right: 7%;}
+.skills-text h1{
+  margin-left: 25%;
+}
+    .hobbies-section img{
+      width: 150px;
+      height: 200px;
+      
+    }
+    .skills-section img{
+      width: 150px;
+      height: 170px;
+      
+    }
+  /* blog*/
+  .video-section, .mental-health-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-main-content .video-section video  {
+    width: 180px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  .blog-main-content .mental-health-section img {
+    width: 130px;
+    height: 150px;
+    margin-top: 4px;}
+  
+  .text-content {
+    margin: 6%;
+    font-size: 14px;
+    text-align: center;
+    
+  }
+  .blog-main-content h1{
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .additional-info{
+    margin: 6%;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+  }
+/*achiev*/
+.achiv-main-content .profile-section {
+  display:flex;
+  flex-direction: column;
+ 
+  margin-top: 10%;
+  margin-bottom: 3%;
+  gap: 15%;
+}
+.achiv-main-content .profile-list li {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+.achievements p{
+  text-align: center;
+  font-size: 16px;
+  
+  margin-top: 20px;
+}
+/*contact*/
+.contact-main-content .hero-title {
+  margin-top: 15px;
+  font-size: 24px;
+
+}
+.contact-main-content h2{
+  font-size: 24px;
+  
+}
+.contact-main-content .contact-container h2{
+  width: 50%;
+}
+.contact-item img {
+  width: 30px;
+  height:30px;
+}
+
+.contact-item a{
+  
+  font-size: 16px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: start;}
+
+
+
+/*footer*/
+  footer p{
+    font-size: 9px;
+   
+  }
+  .social-links a{
+    font-size: 8px;
+    }
+    .footer-container p {
+      font-size: 8px;
+    }
+  .footer-container p a{
+    font-size: 8px;
+  }
+  .footer-container{
+    gap: 23px;
+    display: flex;
+    padding-right: 10%;
+  }
+  
+  .social-links a img{
+     width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    
+  }
+  footer address p{
+    margin: 15px 5%;
+    line-height: 1.6;
+  }
+ 
+}
+ 
+
+
+/*tablet*/
+
+@media (min-width: 581px) and (max-width: 968px) {
+  header .logo img {
+    height: 120px;
+    width: 80px;
+  }
+  span {
+    border: 1px solid #6E5885 ;
+  border-width:1px ;
+    font-size: 13px; 
+  }
+ 
+ nav ul {
+  gap: 4px;
+  margin-right: 0px;
+}
+
+nav ul li {
+  margin: 0;
+  
+}
+
+
+ /*home*/
+  
+ .home .desc p{
+  text-align: center;
+  font-size: 22px;
+  max-width: 60%;
+ 
+}
+.intro .kesh img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;}
+  /*footer*/
+footer p{
+  font-size: 16px;
+ 
+}
+.social-links a{
+  font-size: 16px;
+  }
+.footer-container p a{
+  font-size: 16px;
+}
+.footer-container {
+  gap: 180px;
+  display: flex;
+  padding-right: 10%;
+}
+
+.social-links a img{
+   width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  
+}
+footer address p{
+  margin: 15px 5%;
+  line-height: 1.6;
+}
+/*about*/
+
+.about-section, .hobbies-section, .skills-section {
+
+  margin-left: 60px;
+}
+.main-content h1{
+  font-size: 32px;
+}
+.about-text, .hobbies-text {
+  max-width: 72%;
+  font-size: 15px;
+  }
+  .about-section img{
+    
+    width: 150px;
+    height: 170px;
+   
+  }
+  .skills-text {
+    font-size: 15px;
+    margin-right: 7%;
+  
+  }
+
+  .hobbies-section img{
+    width: 150px;
+    height: 200px;}
+    .skills-section img{
+      width: 150px;
+    height: 150px;
+    }
+/*blog*/
+.video-section,.mental-health-section {
+  margin-left: 40px;
+  gap: 30px;
+  margin-bottom: 0px;
+}
+
+.blog-main-content .video-section video  {
+  width: 170px;
+  height: 160px;
+  margin-top: 70px;
+}
+.blog-main-content .mental-health-section img {
+  width: 155px;
+  height: 210px;
+  margin-top: 70px;
+
+}
+
+.blog-main-content .text-content {
+  
+  font-size: 15px;
+}
+.mental-health-section .text-content{
+  margin-left: 10px;
+}
+.blog-main-content h1{
+  font-size: 32px;
+  margin-top: 0;
+}
+.blog-main-content .additional-info{
+  margin: 6%;
+  font-size: 15px;
+  
+}
+.blog-main-content .additional-info{
+  max-width: 94%;
+  margin-right: 0px;
+}
+
+/*achiv*/
+.achievements-container{
+  display: flex;
+  margin-bottom: 20%;
+}
+.achievements .achievement-card{
+  width: 150px;
+}
+.achievements .achievement-card1{
+  width: 150px;
+}
+.profile-section ul .profile-list  li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.achievements-container p{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+}
+
+
+@media(min-width: 969px){
+
+  .main-content {
+    padding: 20px;
+    margin-left: 60px;
+  }
+  .about-section, .hobbies-section, .skills-section {
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  .skills-text{
+    margin-left: 13%;
+    
+  }
+  .about-text, .hobbies-text {
+    max-width: 72%;
+   
+  }
+  .blog-main-content {
+    padding: 20px;
+    margin-left: 90px;
+  }
+  .video-section, .mental-health-section {
+    gap: 80px;
+    margin-bottom: 10px;
+    
+  }
+  .text-content {
+    max-width: 69%;
+    margin-top: 10px;
+    
+    
+  }
+  .profile-section li{
+   
+      font-size: 24px;;
+    
+  }
+  .achievements-container{
+    font-size: 20px;;
+  }
+  .additional-info{
+    max-width: 97%;
+    margin-top: 10px;
+  }
+  .video-container video  {
+    
+    margin-top: 80px;
+  }
+  .mental-image {
+  
+    margin-top: 95px;}
+    .mental-health-section .text-content{
+      margin-left: 20px;
+    }
+    .footer-container{
+      padding-right: 12%;
+    }
+}
+
+/*home*/
+
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('homen.jpg') ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment:scroll;
+  
+
+}
+
+.intro img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 110px;
+  justify-items: center;
+}
+@font-face {
+  font-family: "Leckerli One";
+  src: url(LeckerliOne-Regular.ttf);
+}
+ h1 {
+  font-size: 40px;
+  margin: 0;
+  margin-top: 40px;
+  color: #220D37;
+  font-family: 'Leckerli One';
+  font-family: calc();
+}
+
+.desc p {
+  font-size: 20px;
+  margin: 50px auto;
+  max-width: 550px;
+  text-align: center;
+  color: #20142D;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*footer*/
+
+
+footer {
+  background-color: #A69BBB;  /* Adjust this shade of purple as needed */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #20142D;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+  
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.social-links a {
+  text-decoration: underline;
+  
+  display: flex;
+  align-items: center;
+ 
+}
+.social-links a:hover{
+  background-color: #cabfd6;
+}
+.social-links img {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+
+.mm {
+  text-decoration: none;
+  color: #20142D;
+}
+.pp{
+  text-decoration: none;
+  color: #20142D;
+}
+
+.copyright {
+  
+  color:#20142D;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* about page*/
+
+
+.about-section, .hobbies-section, .skills-section {
+  display: flex;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 40px;
+  margin-bottom: 0px;
+  
+}
+
+.about-text, .hobbies-text {
+  
+  color: #20142D;
+}
+
+.about-image, .hobbies-image {
+  width: 250px;
+  height: 300px;
+  margin-top: 80px;
+}
+.skills-image{
+  width: 350px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.skills-text{
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+/* Blog page */
+.blog-main-content {
+  padding: 20px;
+  
+}
+
+.video-section, .mental-health-section {
+  display: flex;
+ 
+  
+}
+
+.video-container video  {
+  width: 220px;
+  height: 220px;
+}
+.mental-image {
+  width: 210px;
+  height: 300px;
+  }
+
+.text-content {
+  
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.additional-info{
+  
+  margin-top: 10px;
+  font-size: 18px;
+  
+}
+
+
+/*achievement*/
+.achiv-main-content {
+  padding: 20px;
+  background-image: url('achiv.jpg') ;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment:scroll;
+}
+
+.profile-section {
+  display:flex;
+  padding-top: 5%;
+  margin-bottom: 3%;
+  gap: 15%;
+  margin-left: 27%;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.profile-list {
+  margin-top: 4%;
+  padding: 0;
+}
+
+.profile-list li {
+  margin: 5px 0;
+  
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.achievements p{
+  text-align: center;
+ 
+  font-family: Arial;
+  margin-top: 20px;
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 20%;
+}
+
+.achievement-card {
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(73, 46, 78, 0.1);
+ 
+}
+.achievement-card1 {
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(73, 46, 78, 0.1);
+  padding-top: 5%;
+}
+
+.achievements-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+/*contact*/
+.contact-body{
+  background-color:#6E5885;
+}
+.contact-main-content{
+  margin: 0;
+   padding: 0;
+}
+#hero-section {
+  text-align: center;
+   margin: 0;
+   padding: 0;
+  background-color: #ffffff;
+}
+
+.hero-title {
+  margin-top: 15px;
+  font-size: 32px;
+  color: #20142D;
+  padding-bottom: 10px;
+  margin-left: 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: Arial ;
+  color: #20142D;
+  margin-left: 15%;
+}
+.contact-container{
+  background-color: #FFFFFF;
+  margin: 0 auto; /* Centers the content */
+  padding: 0 10px;
+  padding-top: 15px;
+  padding-bottom: 120px;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distributes items with space between them */
+  gap: 30px; /* Adds spacing between items */
+  margin-left: 20%;
+  margin-right: 10%;
+}
+.contact-grid > div {
+  flex: 1 1 calc(50% - 30px); /* Each item takes up 50% of the row minus the gap */
+  max-width: calc(50% - 30px);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.contact-item img {
+  width: 70px;
+  height:70px;
+}
+
+a {
+  text-decoration: underline;
+  color: #20142D;
+  font-size: 20px;
+}
+
+
